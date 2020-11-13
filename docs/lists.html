@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BraXperiments - Lists</title>
+    <link href="styles/lists.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h2>SNMP MIB Browser Idea</h2>
+    <p>Click items to discover their information.</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'section1')" id="defaultopen">section1</button>
+        <button class="tablinks" onclick="openTab(event, 'section2')">section2</button>
+        <button class="tablinks" onclick="openTab(event, 'section3')">section3</button>
+
+        <button class="accordion">Accord 1</button>
+        <div class="panel">
+            <p>Accordion Panel 1</p>
+        </div>
+
+        <button class="accordion">Accord 2</button>
+        <div class="panel">
+            <p>Accordion Panel 2</p>
+        </div>
+
+        <button class="accordion">Accord 3</button>
+        <div class="panel">
+            <p>Accordion Panel 3</p>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div id="section1" class="tabcontent">
+            <h3>section1</h3>
+            <table>
+                <tr>
+                    <th>Something</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Some String</td>
+                </tr>
+                <tr>
+                    <td>OID</td>
+                    <td>.1.1.1.1.1.1.1</td>
+                </tr>
+                <tr>
+                    <td>MIB</td>
+                    <td>Some MIBy string</td>
+                </tr>
+                <tr>
+                    <td>Syntax</td>
+                    <td>Syntaxy Info</td>
+                </tr>
+                <tr>
+                    <td>Access</td>
+                    <td>Access info</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>Status string</td>
+                </tr>
+                <tr>
+                    <td>DefVal</td>
+                    <td>Defined value string</td>
+                </tr>
+                <tr>
+                    <td>Index</td>
+                    <td>Bunch'o'Indexes</td>
+                </tr>
+                <tr>
+                    <td>Descr</td>
+                    <td>A nice long description.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="section2" class="tabcontent">
+            <h3>section2</h3>
+            <p>Blah 1</p>
+            <p>Blah 2</p>
+        </div>
+
+        <div id="section3" class="tabcontent">
+            <h3>section3</h3>
+            <p>Blah 1</p>
+            <p>Blah 2</p>
+        </div>
+    </div>
+
+    <script src="scripts/lists.js" type="text/javascript"></script>
+</body>
+</html>
